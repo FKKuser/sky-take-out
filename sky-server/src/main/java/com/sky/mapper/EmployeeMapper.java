@@ -25,4 +25,8 @@ public interface EmployeeMapper {
 
     // search employee by page
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+
+    // update the employee property dynamically based on primary key
+    void update(Employee build);
 }

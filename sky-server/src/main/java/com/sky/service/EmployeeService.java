@@ -20,4 +20,6 @@ public interface EmployeeService {
 
     // search by pages
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    void enableOrDisable(Integer status, Long id);
 }

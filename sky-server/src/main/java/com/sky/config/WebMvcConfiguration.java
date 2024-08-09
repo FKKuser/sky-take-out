@@ -72,7 +72,6 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     }
 
 
-
     @Override
     protected void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
