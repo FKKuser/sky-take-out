@@ -93,7 +93,21 @@ public class EmployeeController {
     public Result enableOrDisable(@PathVariable Integer status, Long id){
         log.info("Enabling or disabling employee account: {}{}", status, id);
         employeeService.enableOrDisable(status, id);
+        return Result.success();
+    }
 
+    @GetMapping("/{id}")
+    @ApiOperation("get employee's infomation by ID")
+    public Result<Employee> getById(@PathVariable Long id){
+        Employee employee = employeeService.getById(id);
+        return Result.success(employee);
+    }
+
+    @PutMapping
+    @ApiOperation("Update employee information")
+    public Result update(@RequestBody EmployeeDTO employeeDTO){
+        log.info("update employee information:{}", employeeDTO);
+        employeeService.update(employeeDTO);
         return Result.success();
     }
 }

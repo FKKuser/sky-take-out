@@ -22,4 +22,10 @@ public interface EmployeeService {
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
 
     void enableOrDisable(Integer status, Long id);
+
+    // get employee's infomation by ID
+    Employee getById(Long id);
+
+    // Update employee information
+    void update(EmployeeDTO employeeDTO);
 }

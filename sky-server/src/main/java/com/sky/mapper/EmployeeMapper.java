@@ -29,4 +29,7 @@ public interface EmployeeMapper {
 
     // update the employee property dynamically based on primary key
     void update(Employee build);
+
+    @Select("select * from employee where id = #{id}")
+    Employee getById(Long id);
 }
