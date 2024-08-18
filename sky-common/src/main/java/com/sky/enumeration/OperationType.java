@@ -13,6 +13,7 @@ public enum OperationType {
     /**
      * 插入操作
      */
+
     INSERT
 
 }
