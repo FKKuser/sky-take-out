@@ -6,3 +6,10 @@ sky:
     database: sky_take_out
     username: root
     password: root
+  alioss:
+    endpoint: oss-us-west-1.aliyuncs.com
+    access-key-id: LTAI5tJE9y3ZfvpHpqabR1ie
+    access-key-secret: nznZZBOWyIthvp9CCsGPx5cJrTY7z5
+    bucket-name: yg-sky-take-out
+
+
