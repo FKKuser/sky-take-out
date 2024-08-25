@@ -11,5 +11,9 @@ sky:
     access-key-id: LTAI5tJE9y3ZfvpHpqabR1ie
     access-key-secret: nznZZBOWyIthvp9CCsGPx5cJrTY7z5
     bucket-name: yg-sky-take-out
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
 
 
