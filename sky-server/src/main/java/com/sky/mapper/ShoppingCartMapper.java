@@ -19,7 +19,7 @@ public interface ShoppingCartMapper {
 
 
     @Update("UPDATE sky_take_out.shopping_cart set number = #{number} where id = #{id}")
-    void updateNumberById(ShoppingCart shoppingCartItem);
+    void updateNumberById(ShoppingCart shoppingCart);
 
 
     /**
