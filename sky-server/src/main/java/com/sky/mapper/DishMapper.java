@@ -35,7 +35,6 @@ public interface DishMapper {
     @Delete("delete from sky_take_out.dish where id = #{id}")
     void deleteById(Long id);
 
-
     void deleteByIds(List<Long> ids);
 
 
