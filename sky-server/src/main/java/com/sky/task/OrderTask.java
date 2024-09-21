@@ -25,7 +25,7 @@ public class OrderTask {
     /**
      * 处理下单超过15分钟不支付的订单
      */
-    @Scheduled(cron = "0 * * ? * * *")
+    @Scheduled(cron = "0 * * * * *")
     public void processTimeoutOrders(){
         log.info("Timed processing of timeout orders: {}", LocalDateTime.now());
 
@@ -44,7 +44,7 @@ public class OrderTask {
     /**
      * 处理一直处于派送中的订单
      */
-    @Scheduled(cron = "0 0 1 ? * * *")
+    @Scheduled(cron = "0 0 1 * * *")
     public void processDeliveryOrder(){
         log.info("deal with on delivery order every day: {}", LocalDateTime.now());
         LocalDateTime time = LocalDateTime.now().minusHours(1);

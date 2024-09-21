@@ -18,6 +18,9 @@ sky:
   wechat:
     appid: wx8019c444e38940c1
     secret: 0325bf7e3c128a03de2d67cfb1f789a9
+    notifyUrl:  http://da70d0a.r12.cpolar.top/notify/paySuccess
+    refundNotifyUrl:  http://da70d0a.r12.cpolar.top/notify/refundSuccess
+
 
 
 
