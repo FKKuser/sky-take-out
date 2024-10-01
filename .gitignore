@@ -4,3 +4,6 @@
 *.class
 *Test.java
 **/test/
+
+# 忽略 application-dev.yml 文件
+application-dev.yml
